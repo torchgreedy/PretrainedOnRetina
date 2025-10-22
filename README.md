@@ -58,6 +58,5 @@ Sample JSON response:
 
 ## Notes
 - The server reads `MODEL_DIR` env var; defaults to `my-trained-vit-model` in the repo root.
-- Labels are read from `model.config.id2label` if available; otherwise a fallback mapping `{0: CNV, 1: DME, 2: DRUSEN, 3: NORMAL}` is used. Adjust in `app/main.py` if your training used a different ordering.
 - CPU inference by default. If you want GPU, move tensors to CUDA and ensure PyTorch with CUDA is installed.
 
